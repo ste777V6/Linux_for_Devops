@@ -58,6 +58,9 @@
 
 > **Tip:** `find . -type f -name "*.log" | xargs cat | grep "ERROR" | sort -k4 | uniq -f4 > errors.log` - Find all the logs file .lpg from the current directory with "ERROR" and sort them by the 4th column on the log (separated by space), remove duplicates (from column 4)
 
+> **Tip:**`find . -type f -name "*.txt" -exec rsync -R {} ./backup \;` Copy files (even with the same name) into a backup folder
+
+
 ### Network Diagnostics
 
 | Command | Key Flags | What It Does / Key Output |
