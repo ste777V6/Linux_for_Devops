@@ -1,4 +1,4 @@
-# 50 Linux Commands for DevOps
+# Linux_for_Devops
 
 > A field guide for diagnosing, securing, and automating Linux systems — organized by mission.
 
