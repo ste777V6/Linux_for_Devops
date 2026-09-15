@@ -55,6 +55,7 @@
 | `xargs` | `-I {}` `-n1` `-P4` | Pipe to commands. `find \| xargs wc -l`. `-I {}` for placeholder. `-P4` for parallel. |
 
 > **Tip:** `awk | sort | uniq -c | sort -rn` — the most powerful one-liner. Turns any log into a frequency table.
+
 > **Tip:** `find . -type f -name "*.log" | xargs cat | grep "ERROR" | sort -k4 | uniq -f4 > errors.log
 find . -type f -name` - Find all the logs file .lpg from the current directory with "ERROR" and sort them by the 4th column on the log (separated by space), remove duplicates (from column 4)
 
